@@ -1,0 +1,19 @@
+# ポイント交換アイテム
+# 名前、アイテム(Material-ID)、必要ポイント
+trade-items:
+  おいしいリンゴ:
+    material-id: GOLDEN_APPLE
+    need-point: 300
+  最強のつりざお:
+    material-id: FISHING_ROD
+    need-point: 2000
+  微妙に使えるテストアイテム:
+    material-id: WOODEN_PICKAXE
+    need-point: 500
+    lore:
+      - Lore1行目aiueo
+      - Lore2行目abcde
+    enchant:
+      DIG_SPEED: 5
+      DURABILITY: 3
+      MENDING: 1

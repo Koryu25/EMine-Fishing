@@ -1,0 +1,11 @@
+name: EMineFishing
+version: ${project.version}
+main: com.github.koryu25.emf.eminefishing.Main
+api-version: 1.16
+prefix: [ EMF ]
+authors: [ Koryu25 ]
+description: 釣りのミニゲームができるプラグイン。
+commands:
+  emf:
+    description: main command
+    usage: /<command> でヘルプ表示

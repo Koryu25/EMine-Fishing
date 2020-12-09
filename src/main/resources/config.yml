@@ -1,0 +1,64 @@
+# MySQL
+# ↓テーブルの仕様
+# uuid、プレイヤーの名前、ポイント
+# | uuid | name | point |
+MySQL:
+  host: localhost
+  database: eminefishing
+  username: root
+  password:
+  port: 3306
+  tablename: emf
+
+# 制限時間(初期値:600秒)
+Time: 600
+# ゲーム座標
+GamingLocation:
+  World: world
+  X: 0
+  Y: 64
+  Z: 0
+
+# 釣果アイテム
+# 名前、釣果(Material-ID)、発生確率(%)、獲得ポイント
+result-items:
+  生鱈:
+    material-id: COD
+    probability: 40
+    point: 1
+  生鮭:
+    material-id: SALMON
+    probability: 30
+    point: 3
+  熱帯魚:
+    material-id: TROPICAL_FISH
+    probability: 16
+    point: 3
+  フグ:
+    material-id: PUFFERFISH
+    probability: 5
+    point: 10
+  弓:
+    material-id: BOW
+    probability: 3.5
+    point: 12
+  名札:
+    material-id: NAME_TAG
+    probability: 2
+    point: 16
+  オウムガイの殻:
+    material-id: NAUTILUS_SHELL
+    probability: 1.6
+    point: 20
+  腐った肉:
+    material-id: ROTTEN_FLESH
+    probability: 1
+    point: 0
+  スイレンの葉:
+    material-id: LILY_PAD
+    probability: 0.8
+    point: 25
+  金のリンゴ:
+    material-id: GOLDEN_APPLE
+    probability: 0.1
+    point: 35
