@@ -1,5 +1,7 @@
-package com.github.koryu25.emf.eminefishing;
+package com.github.koryu25.emf.eminefishing.guiitem;
 
+import com.github.koryu25.emf.eminefishing.Main;
+import com.github.koryu25.emf.eminefishing.guiitem.Items;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

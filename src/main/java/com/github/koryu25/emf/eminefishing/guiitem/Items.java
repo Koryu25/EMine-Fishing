@@ -1,9 +1,10 @@
-package com.github.koryu25.emf.eminefishing;
+package com.github.koryu25.emf.eminefishing.guiitem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.github.koryu25.emf.eminefishing.Main;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;

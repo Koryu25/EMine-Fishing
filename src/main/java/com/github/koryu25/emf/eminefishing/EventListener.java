@@ -2,6 +2,8 @@ package com.github.koryu25.emf.eminefishing;
 
 import java.util.Random;
 
+import com.github.koryu25.emf.eminefishing.guiitem.Items;
+import com.github.koryu25.emf.eminefishing.guiitem.TradeMenu;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;

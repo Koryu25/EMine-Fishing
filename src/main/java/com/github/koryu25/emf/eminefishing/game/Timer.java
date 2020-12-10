@@ -1,5 +1,7 @@
-package com.github.koryu25.emf.eminefishing;
+package com.github.koryu25.emf.eminefishing.game;
 
+import com.github.koryu25.emf.eminefishing.guiitem.Items;
+import com.github.koryu25.emf.eminefishing.Main;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -27,14 +29,16 @@ public class Timer extends BukkitRunnable {
 			cancel();
 			player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText("§e終了！"));
 			player.sendMessage("[EMF] §2EMine§7-§3Fishing§f 終了！");
-			player.sendMessage("[EMF] §a現在の獲得済ポイント: §f"+Main.dbm.getPoint(player));
+			player.sendMessage("[EMF] §a現在の獲得済ポイント: §f"+ Main.dbm.getPoint(player));
 			player.getInventory().remove(Items.getFishigGameRod());
 			//Mapから削除
-			Main.timerMap.remove(this.player);
+			Main.gaming.remove(player);
 			//保存された(ゲーム以前の)座標にテレポート
 			player.teleport(before);
 		}
 		count--;
 	}
-
+	public void stop() {
+		this.count = 0;
+	}
 }

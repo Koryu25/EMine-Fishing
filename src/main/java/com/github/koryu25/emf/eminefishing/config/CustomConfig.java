@@ -1,4 +1,4 @@
-package com.github.koryu25.emf.eminefishing;
+package com.github.koryu25.emf.eminefishing.config;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
